@@ -1,5 +1,5 @@
-import PhaserLogo from '../objects/phaserLogo'
-import FpsText from '../objects/fpsText'
+import FpsText from '../texts/fpsText'
+import Player from '../sprites/player'
 
 export default class MainScene extends Phaser.Scene {
   fpsText
@@ -12,7 +12,7 @@ export default class MainScene extends Phaser.Scene {
     /**
      * Delete all the code below to start a fresh scene
      */
-    new PhaserLogo(this, this.cameras.main.width / 2, 0)
+    new Player(this, this.cameras.main.width / 2, 0)
     this.fpsText = new FpsText(this)
 
     // async/await example
